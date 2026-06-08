@@ -1,5 +1,6 @@
 <?php
  include "header.php";
+ include "koneksi.php";
 ?>
 
 <!doctype html>
@@ -8,7 +9,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeri Furniture</title>
-    <link rel="stylesheet" href="CSS/Beranda.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
 </head>
 <body>
     <header class="home">
@@ -22,19 +23,18 @@
         </div>
 
         <div class="product-grid">
-            <div class="product-card">
-                <img src="Aset/Beranda - 2.jpeg" />
-                <h3>MT 120</h3>
-                <p>1200 x 595 x 720 cm</p>
-                <p>Warna: Coklat Walnut</p>
-            </div>
-
-            <div class="product-card">
-                <img src="Aset/beranda - 1.jpeg" />
-                <h3>MT 120</h3>
-                <p>1200 x 595 x 720 cm</p>
-                <p>Warna: Putih Sonoma</p>
-            </div>
+            <?php
+            $sql = "SELECT * FROM produk LIMIT 2";
+            $query = mysqli_query($koneksi, $sql);
+            while($row = mysqli_fetch_assoc($query)):
+            ?>
+                <div class="product-card">
+                    <img src="Aset/<?= $row['gambar']; ?>" />
+                    <h3><?= $row['nama_produk']; ?></h3>
+                    <p><?= $row['ukuran']; ?></p>
+                    <p><?= $row['warna']; ?></p>
+                </div>
+            <?php endwhile; ?>
         </div>
     </header>
     <script src="JS/Katalog.js"></script>
