@@ -1,3 +1,8 @@
+<?php
+
+include "../security.php";
+include "../../koneksi.php";
+
 $id = $_GET['id'];
 
 $cek = mysqli_query(
