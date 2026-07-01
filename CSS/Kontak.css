@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -145,4 +146,153 @@ body {
 .popup a:hover {
   color: navy;
   font-weight: bold;
+=======
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.logo {
+  align-items: baseline;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  color: red;
+}
+
+.warna {
+  color: navy;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.testbtn {
+  display: flex;
+  background-color: #f9f9f9;
+  color: black;
+  font-size: 20px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.testbtn:hover {
+  background-color: navy;
+  color: white;
+  font-weight: bolder;
+}
+
+
+.lokasi {
+  display: flex;
+  min-height: 600px;
+  padding: 80px 10%;
+  gap: 50px;
+  background:  #f9f9f9;
+}
+
+.lokasi-text {
+  width: 40%;
+}
+
+.lokasi-text h1 {
+  font-size: 32px;
+  color: navy;
+}
+
+.lokasi-text h1 span {
+  color: red;
+}
+
+.lokasi-text p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.info-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-box p {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.info-box a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.map {
+  width: 60%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup {
+  position: fixed;
+  top: 90px;
+  right: 180px;
+  width: 330px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+  display: none;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+}
+
+.popup li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.popup a:hover {
+  color: navy;
+  font-weight: bold;
+>>>>>>> d3b3d1e4415bef11bd794b6d821302a9dc4f1a38
 }
