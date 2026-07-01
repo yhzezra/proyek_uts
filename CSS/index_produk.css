@@ -1,0 +1,47 @@
+body{
+    font-family: Arial;
+    margin: 30px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:5px;
+    color:white;
+}
+.dashboard{
+    background:#007bff;
+}
+
+.tambah{
+    background:green;
+}
+
+.edit{
+    background:orange;
+}
+
+.hapus{
+    background:red;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+img{
+    width:80px;
+}

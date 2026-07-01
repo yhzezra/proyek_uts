@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-tambah{
+    background: green;
+}
+
+.btn-edit{
+    background: orange;
+}
+
+.btn-hapus{
+    background: red;
+}
+
+.btn-dashboard{
+    background: #007bff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th{
+    background: #007bff;
+    color: white;
+}
+
+tr:nth-child(even){
+    background: #f2f2f2;
+}
