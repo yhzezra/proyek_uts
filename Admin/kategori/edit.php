@@ -73,8 +73,3 @@ if(isset($_POST['update'])){
 <a href="index.php"> Kembali </a>
 
 </body>
-<<<<<<< HEAD
-</html>
-=======
-</html>
->>>>>>> d3b3d1e4415bef11bd794b6d821302a9dc4f1a38

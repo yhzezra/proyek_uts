@@ -115,8 +115,3 @@ while($k=mysqli_fetch_assoc($kategori)){
     Simpan
 </button>
 
-<<<<<<< HEAD
-</form>
-=======
-</form>
->>>>>>> d3b3d1e4415bef11bd794b6d821302a9dc4f1a38
