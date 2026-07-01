@@ -19,11 +19,6 @@ $query = mysqli_query($koneksi,$sql);
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
-    <title>Manajemen Produk</title>
-=======
-<   title>Manajemen Produk</>
->>>>>>> d3b3d1e4415bef11bd794b6d821302a9dc4f1a38
     <link rel="stylesheet" href="../../CSS/index_produk.css" />
 </head>
 
@@ -91,8 +86,3 @@ $query = mysqli_query($koneksi,$sql);
 </table>
 
 </body>
-<<<<<<< HEAD
-</html>
-=======
-</html>
->>>>>>> d3b3d1e4415bef11bd794b6d821302a9dc4f1a38

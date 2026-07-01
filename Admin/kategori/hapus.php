@@ -29,8 +29,4 @@ mysqli_query(
      WHERE id_kategori='$id'"
 );
 
-<<<<<<< HEAD
-header("Location:index.php");
-=======
-header("Location:index.php");
->>>>>>> d3b3d1e4415bef11bd794b6d821302a9dc4f1a38
+
