@@ -1,5 +1,10 @@
 <?php 
 include 'koneksi.php';
+
+$queryKategori = mysqli_query(
+    $koneksi,
+    "SELECT * FROM kategori ORDER BY nama_kategori ASC"
+);
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +29,12 @@ include 'koneksi.php';
 
     <div class="popup" id="popupKatalog">
         <ul class="popupbtn">
-            <li><a href="Product.php?kategori=mejamakan" class="popupbtn">Meja Makan</a></li>
-            <li><a href="Product.php?kategori=mejakantor" class="popupbtn">Meja Kantor</a></li>
-            <li><a href="Product.php?kategori=kasur" class="popupbtn">Kasur</a></li>
-            <li><a href="Product.php?kategori=raksepatu" class="popupbtn">Rak Sepatu</a></li>
+            <?php while ($kategori = mysqli_fetch_assoc($queryKategori)){?>
+                <li>
+                    <a href="Product.php?kategori=<?= $kategori['slug']; ?>" class="popupbtn">
+                        <?= $kategori['nama_kategori']; ?></a>
+                </li>
+            <?php } ?>
         </ul>
     </div>
 </body>
