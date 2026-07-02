@@ -1,0 +1,32 @@
+.float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 30px;
+    bottom: 30px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    transition: all .3s ease;
+    z-index: 999;
+}
+
+.float i{
+    font-size: 32px;
+    transition: all .3s ease;
+}
+
+.float:hover{
+    background: #1ebe5d;
+    transform: scale(1.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+
+.float:hover i{
+    transform: rotate(15deg);
+}
