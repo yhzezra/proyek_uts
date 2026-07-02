@@ -40,3 +40,96 @@ if(isset($_POST['update'])){
 }
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Produk</title>
+</head>
+
+<body>
+    <h2>Edit Produk</h2>
+<form method="POST">
+    <p>
+        Kategori
+        <br>
+        <select name="id_kategori">
+        <?php
+        $kategori = mysqli_query($koneksi,"SELECT * FROM kategori");
+        while($k = mysqli_fetch_assoc($kategori)){
+        ?>
+            <option
+                value="<?= $k['id_kategori']; ?>"
+                <?= ($k['id_kategori']==$data['id_kategori']) ? "selected" : ""; ?>
+            >
+                <?= $k['nama_kategori']; ?>
+            </option>
+        <?php } ?>
+        </select>
+    </p>
+
+    <p>
+        Nama Produk
+        <br>
+        <input
+            type="text"
+            name="nama_produk"
+            value="<?= $data['nama_produk']; ?>"
+            required
+        >
+    </p>
+
+    <p>
+        Ukuran
+        <br>
+        <input
+            type="text"
+            name="ukuran"
+            value="<?= $data['ukuran']; ?>"
+            required
+        >
+    </p>
+
+    <p>
+        Warna
+        <br>
+        <input
+            type="text"
+            name="warna"
+            value="<?= $data['warna']; ?>"
+            required
+        >
+    </p>
+
+    <p>
+        Deskripsi
+        <br>
+        <textarea
+            name="deskripsi"
+            rows="5"
+            cols="50"
+        ><?= $data['deskripsi']; ?></textarea>
+    </p>
+
+    <p>
+        Gambar
+        <br>
+        <input
+            type="text"
+            name="gambar"
+            value="<?= $data['gambar']; ?>"
+            required
+        >
+    </p>
+
+    <button type="submit" name="update">
+        Simpan Perubahan
+    </button>
+
+    <button type="submit" name="update">
+        <a href="index.php">Batal</a>
+    </button>
+
+</form>
+</body>
+</html>
