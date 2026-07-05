@@ -9,16 +9,19 @@ body{
     border-radius:5px;
     color:white;
 }
+
 .dashboard{
     background:#007bff;
 }
 
 .tambah{
     background:green;
+    margin-right: 10px; 
 }
 
 .edit{
     background:orange;
+    margin-right: 8px; 
 }
 
 .hapus{

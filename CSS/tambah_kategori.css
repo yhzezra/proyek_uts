@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    background: #fff;
+    width: 550px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #222;
+    text-align: center; 
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+input[type="text"]:focus{
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13,110,253,.3);
+}
+
+.action-group{
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+}
+
+.btn-simpan{
+    background: #0d6efd;*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+form{
+    width:600px;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+h2{
+    margin-bottom:30px;
+    text-align:center;
+    font-size:40px;
+    color:#222;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    font-size:20px;
+    font-weight:bold;
+    color:#333;
+}
+
+input[type="text"]{
+    width:100%;
+    padding:15px;
+    border:1px solid #d6d6d6;
+    border-radius:10px;
+    font-size:16px;
+    margin-bottom:30px;
+    outline:none;
+    transition:.3s;
+}
+
+input[type="text"]:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 6px rgba(13,110,253,.2);
+}
+
+.action-group{
+    display:flex;
+    gap:15px;
+}
+
+.btn-simpan,
+.btn-kembali{
+    width:150px;
+    padding:14px;
+    border-radius:10px;
+    font-size:18px;
+    text-align:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-simpan{
+    border:none;
+    background:#0d6efd;
+    color:#fff;
+    cursor:pointer;
+}
+
+.btn-simpan:hover{
+    background:#0b5ed7;
+}
+
+.btn-kembali{
+    border:2px solid #6c757d;
+    color:#6c757d;
+}
+
+.btn-kembali:hover{
+    background:#6c757d;
+    color:#fff;
+}
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-simpan:hover{
+    background: #0b5ed7;
+}
+
+.btn-kembali{
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #6c757d;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 16px;
+    text-align: center;
+    transition: .3s;
+}
+
+.btn-kembali:hover{
+    background: #6c757d;
+    color: white;
+}

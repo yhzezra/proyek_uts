@@ -16,10 +16,12 @@ h2{
 
 .btn-tambah{
     background: green;
+    margin-right: 10px;
 }
 
 .btn-edit{
     background: orange;
+    margin-right: 8px;
 }
 
 .btn-hapus{

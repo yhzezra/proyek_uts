@@ -16,102 +16,116 @@ if(isset($_POST['simpan'])){
         $koneksi,
         "INSERT INTO produk
         (
-        id_kategori,
-        nama_produk,
-        ukuran,
-        warna,
-        deskripsi,
-        gambar
+            id_kategori,
+            nama_produk,
+            ukuran,
+            warna,
+            deskripsi,
+            gambar
         )
         VALUES
         (
-        '$id_kategori',
-        '$nama',
-        '$ukuran',
-        '$warna',
-        '$deskripsi',
-        '$gambar'
+            '$id_kategori',
+            '$nama',
+            '$ukuran',
+            '$warna',
+            '$deskripsi',
+            '$gambar'
         )"
     );
 
     header("Location:index.php");
+    exit;
 }
 
 ?>
 
-<h2>Tambah Produk</h2>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tambah Produk</title>
+    <link rel="stylesheet" href="../../CSS/tambah_produk.css">
+</head>
+<body>
 
-<form method="POST">
+<div class="container">
 
-<label>Kategori</label>
-<br>
+    <h2>Tambah Produk</h2>
 
-<select name="id_kategori">
+    <form method="POST">
 
-<?php
+        <label>Kategori</label>
 
-$kategori = mysqli_query(
-    $koneksi,
-    "SELECT * FROM kategori"
-);
+        <select name="id_kategori">
 
-while($k=mysqli_fetch_assoc($kategori)){
+            <?php
 
-?>
+            $kategori = mysqli_query($koneksi,"SELECT * FROM kategori");
 
-<option value="<?= $k['id_kategori']; ?>">
+            while($k = mysqli_fetch_assoc($kategori)){
 
-    <?= $k['nama_kategori']; ?>
+            ?>
 
-</option>
+                <option value="<?= $k['id_kategori']; ?>">
+                    <?= $k['nama_kategori']; ?>
+                </option>
 
-<?php } ?>
+            <?php } ?>
 
-</select>
+        </select>
 
-<br><br>
+        <label>Nama Produk</label>
+        <input
+            type="text"
+            name="nama_produk"
+            placeholder="Masukkan nama produk"
+            required>
 
-<input
-    type="text"
-    name="nama_produk"
-    placeholder="Nama Produk"
-    required>
+        <label>Ukuran</label>
+        <input
+            type="text"
+            name="ukuran"
+            placeholder="Masukkan ukuran"
+            required>
 
-<br><br>
+        <label>Warna</label>
+        <input
+            type="text"
+            name="warna"
+            placeholder="Masukkan warna"
+            required>
 
-<input
-    type="text"
-    name="ukuran"
-    placeholder="Ukuran"
-    required>
+        <label>Deskripsi</label>
+        <textarea
+            name="deskripsi"
+            placeholder="Masukkan deskripsi"></textarea>
 
-<br><br>
+        <label>Nama File Gambar</label>
+        <input
+            type="text"
+            name="gambar"
+            placeholder="Contoh: meja.jpg"
+            required>
 
-<input
-    type="text"
-    name="warna"
-    placeholder="Warna"
-    required>
+        <div class="action-group">
 
-<br><br>
+            <button
+                type="submit"
+                name="simpan"
+                class="btn-simpan">
+                Simpan
+            </button>
 
-<textarea
-    name="deskripsi"
-    placeholder="Deskripsi"></textarea>
+            <a href="index.php" class="btn-kembali">
+                Kembali
+            </a>
 
-<br><br>
+        </div>
 
-<input
-    type="text"
-    name="gambar"
-    placeholder="Nama File Gambar"
-    required>
+    </form>
 
-<br><br>
+</div>
 
-<button
-    type="submit"
-    name="simpan">
-    Simpan
-</button>
-
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 650px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+    font-size: 36px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 17px;
+}
+
+select,
+input[type="text"],
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+}
+
+select:focus,
+input[type="text"]:focus,
+textarea:focus{
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13,110,253,.3);
+}
+
+textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+
+.action-group{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-simpan{
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-simpan:hover{
+    background: #0b5ed7;
+}
+
+.btn-kembali{
+    text-decoration: none;
+    color: #6c757d;
+    border: 2px solid #6c757d;
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: .3s;
+    font-size: 16px;
+}
+
+.btn-kembali:hover{
+    background: #6c757d;
+    color: white;
+}

@@ -29,38 +29,30 @@ if(isset($_POST['simpan'])){
 <html>
 <head>
     <title>Tambah Kategori</title>
+    <link rel="stylesheet" href="../../CSS/tambah_kategori.css" />
 </head>
 <body>
-
-<h2>Tambah Kategori</h2>
 
 <form method="POST">
 
     <label>Nama Kategori</label>
-    <br>
-
     <input
         type="text"
         name="nama_kategori"
         required
     >
 
-    <br><br>
-
-    <button
-        type="submit"
-        name="simpan"
-    >
-        Simpan
-    </button>
+    <div class="action-group">
+        <button
+            type="submit"
+            name="simpan"
+            class="btn-simpan">
+            Simpan
+        </button>
+        
+        <a href="index.php" class="btn-kembali">
+            Kembali
+        </a>
+    </div>
 
 </form>
-
-<br>
-
-<a href="index.php">
-    Kembali
-</a>
-
-</body>
-</html>
