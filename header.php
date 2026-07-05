@@ -7,14 +7,6 @@ $queryKategori = mysqli_query(
 );
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <nav class="navbar">
         <div class="logo"> GALERI<span class="warna">FURNITURE</span></div>
         </div> <ul class="nav-links">
@@ -37,5 +29,7 @@ $queryKategori = mysqli_query(
             <?php } ?>
         </ul>
     </div>
-</body>
-</html>
+
+    <a href="Permintaan.php" class="float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
