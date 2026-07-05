@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Kontak.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
   <section class="lokasi">
@@ -22,7 +25,7 @@
         <p>Senin - Sabtu: 08.00 - 17.00</p>
         <p>Minggu: 10.00 - 12.00</p>
         <h4>Telp : (0562) 4643342</h4>
-        <h4><a href="https://wa.me/6281549467468">WA : 081549467468</a></h4>
+        <h4>WA : 081549467468</h4>
       </div>
     </div>
 
