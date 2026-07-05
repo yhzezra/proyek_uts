@@ -23,6 +23,6 @@ Terima kasih.";
 
 $isiPesan = urlencode($isiPesan);
 
-header("Location: https://wa.me/6282250769250?text=".$isiPesan);
+header("Location: https://wa.me/6281549467468?text=".$isiPesan);
 
 exit;
